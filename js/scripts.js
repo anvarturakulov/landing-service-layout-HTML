@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 	// кнопка меню бургер 
 	let burgerButton = document.getElementById('nav-icon');
-	let mainMenu = document.querySelector('.mainMenu');
+  let mainMenu = document.querySelector('.mobileMenu');
 	burgerButton.addEventListener('click', () => {
 		burgerButton.classList.toggle('open');
 		if ( burgerButton.classList.contains('open') ) {
-			mainMenu.classList.add('act');
+			mainMenu.classList.add('active');
 		} else {
-			mainMenu.classList.remove('act');
+			mainMenu.classList.remove('active');
 		}
 	});
-	// скрытый инпут против спама формы (это не удалять!!)
+	
+  // скрытый инпут против спама формы (это не удалять!!)
   if ( document.querySelector('.ncapt') ){    
       const input = document.querySelectorAll('.ncapt');
       for(let inp of input) {
@@ -108,42 +109,43 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	
 	// Маска телефона
-    [].forEach.call( document.querySelectorAll('input[type="tel"]'), function(input) {
-	    var keyCode;
-	    function mask(event) {
-	        event.keyCode && (keyCode = event.keyCode);
-	        var pos = this.selectionStart;
-	        /*if (pos < 3) event.preventDefault();*/
-	        if (pos < 3) this.setSelectionRange(3, 3);
-	        var matrix = "+7 (___) ___ ____",
-	            i = 0,
-	            def = matrix.replace(/\D/g, ""),
-	            val = this.value.replace(/\D/g, ""),
-	            new_value = matrix.replace(/[_\d]/g, function(a) {
-	                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
-	            });
-	        i = new_value.indexOf("_");
-	        if ( (i == 4 && keyCode == 56) || (i == 4 && keyCode == 104) ) {
-	          event.preventDefault();
-	        }
-	        if (i != -1) {
-	            i < 5 && (i = 3);
-	            new_value = new_value.slice(0, i)
-	        }
-	        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
-	            function(a) {
-	                return "\\d{1," + a.length + "}"
-	            }).replace(/[+()]/g, "\\$&");
-	        reg = new RegExp("^" + reg + "$");
-	        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
-	        if (event.type == "blur" && this.value.length < 5)  this.value = ""
-	    }
-	    input.addEventListener("input", mask, false);
-	    input.addEventListener("focus", mask, false);
-	    input.addEventListener("blur", mask, false);
-	    input.addEventListener("keydown", mask, false)
-	  });
+  [].forEach.call( document.querySelectorAll('input[type="tel"]'), function(input) {
+    var keyCode;
+    function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        /*if (pos < 3) event.preventDefault();*/
+        if (pos < 3) this.setSelectionRange(3, 3);
+        var matrix = "+7 (___) ___ ____",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if ( (i == 4 && keyCode == 56) || (i == 4 && keyCode == 104) ) {
+          event.preventDefault();
+        }
+        if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+  });
 	// вопрос-ответы
+  
   const questions = document.querySelectorAll('.faq');
   questions.forEach((question) => {
     const opener = question.querySelector('.faq-title')
@@ -152,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
       question.classList.toggle('opened')
     })
   })
+
   // добавим карту позже по скролу (src оставить, я потом поменяю)
   if (document.getElementById('yamap')) {
     let ok = false;                    
@@ -165,11 +168,11 @@ document.addEventListener("DOMContentLoaded", function() {
           }, 500)    
       }
     });
+  
     // блок с контактами на карте выравниваем под .container, т.к. сама карта width=100%
     if (window.matchMedia('screen and (min-width: 768px)').matches) {
         // let leftOffset = document.querySelector("footer .container").getBoundingClientRect().left;
         // document.querySelector(".contacts").style.left = leftOffset + 15 + 'px';
     }
   }
-
 });
