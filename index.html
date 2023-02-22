@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[#seo-title#]</title>
+    <meta name="description" content='[#seo-description#]'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+      <p><a href="javascript:void(0)" class="trigger" data-modal-trigger="trigger-1">Открыть модалку</a></p>
+      <nav class="mainMenu">
+        <ul>            
+          <li><a href="#uslugi">Выгоды</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>         
+      </nav>
+      <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="faq" class="lazy-background">
+      <div class="container">
+        <p class="title">Частые вопросы</p>
+        <div class="faq-main">
+          <section class="faq opened"> 
+            <div class="faq-status"></div>
+            <div class="faq-container">
+                <p class="faq-title">Вопрос 1</p>
+                <div class="faq-info">
+                  <p>Ответ 1</p>
+                </div>
+            </div>
+          </section>
+          <section class="faq" > 
+              <div class="faq-status"></div>
+              <div class="faq-container">
+                  <p class="faq-title">Вопрос 2</p>
+                  <div class="faq-info">
+                    <p>Ответ 2</p>
+                  </div>
+              </div>
+          </section>
+          <section class="faq"> 
+              <div class="faq-status"></div>
+              <div class="faq-container">
+                  <p class="faq-title">Вопрос 3</p>
+                  <div class="faq-info">
+                      <p>Ответ 3</p>
+                  </div>
+              </div>
+          </section>
+          <section class="faq"> 
+              <div class="faq-status"></div>
+              <div class="faq-container">
+                  <p class="faq-title">Вопрос 4</p>
+                  <div class="faq-info">
+                      <p>Ответ 4</p>
+                  </div>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="yandex-map">
+      <div id="yamap"></div>
+    </div>
+
+
+    <div class="modal modal-1" data-modal="trigger-1">
+      <article class="content-wrapper">
+        <button class="close"></button>
+        <div class="modal-wrap">
+            <div class="content">
+              <p class="text-big">Оставьте свои данные</p>
+              <br>
+              <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">    
+                <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                <button type="submit" class="btn">Получить консультацию</button>
+            </form>            
+            </div>
+          </div>
+      </article>
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
