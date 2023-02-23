@@ -20,81 +20,84 @@
 </head>
 
 <body>
-    <div class="container">
-        <section class="nav-bar">
-            <div class="logo">
-                <img src="./img/logo.png" alt="Логотип" title="Логотип">
-            </div>
-            <ul class="main-menu">
-                <li class="main-menu-item text">
-                    <a href="#">Наши услуги</a>
-                </li>
-                <li class="main-menu-item text">
-                    <a href="#">Оставить заявку</a>
-                </li>
-                <li class="main-menu-item text">
-                    <a href="#">Почему мы?</a>
-                </li>
-                <li class="main-menu-item text">
-                    <a href="#">Сервис</a>
-                </li>
-                <li class="main-menu-item text">
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-            <div class="social-box">
-                <a href="#" class="social-items">
-                    <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
-                </a>
-                <a href="#" class="social-items">
-                    <img src="./img/ico/messanger/viber.png" alt="viber" title="viber">
-                </a>
-                <a href="#" class="social-items">
-                    <img src="./img/ico/messanger/weechat.png" alt="weechat" title="weechat">
-                </a>
-            </div>
-            <div class="call-box">
-                <div class="phone">
-                    <img src="./img/ico/phone.png" alt="Телефон" title="Телефон">
-                    <div class="phone-number">+7 (485) 937- 99- 92</div>
+    <section class="nav-bar">
+        <div class="container">
+            <div class="nav-bar-box">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Логотип" title="Логотип">
                 </div>
-                <div class="call-button">Заказать звонок</div>
-            </div>
-
-            <nav class="mobileMenu">
-                <ul>
-                    <li><a href="#uslugi">Наши услуги</a></li>
-                    <li><a href="#price">Оставить заявку</a></li>
-                    <li><a href="#contacts">Почему мы?</a></li>
-                    <li><a href="#price">Сервис</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                <ul class="main-menu">
+                    <li class="main-menu-item text">
+                        <a href="#">Наши услуги</a>
+                    </li>
+                    <li class="main-menu-item text">
+                        <a href="#">Оставить заявку</a>
+                    </li>
+                    <li class="main-menu-item text">
+                        <a href="#">Почему мы?</a>
+                    </li>
+                    <li class="main-menu-item text">
+                        <a href="#">Сервис</a>
+                    </li>
+                    <li class="main-menu-item text">
+                        <a href="#">Контакты</a>
+                    </li>
                 </ul>
-            </nav>
-            <div id="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="social-box">
+                    <a href="#" class="social-items">
+                        <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
+                    </a>
+                    <a href="#" class="social-items">
+                        <img src="./img/ico/messanger/viber.png" alt="viber" title="viber">
+                    </a>
+                    <a href="#" class="social-items">
+                        <img src="./img/ico/messanger/weechat.png" alt="weechat" title="weechat">
+                    </a>
+                </div>
+                <div class="call-box">
+                    <div class="phone">
+                        <img src="./img/ico/phone.png" alt="Телефон" title="Телефон">
+                        <div class="phone-number text">+7 (485) 937- 99- 92</div>
+                    </div>
+                    <div class="call-button">Заказать звонок</div>
+                </div>
+
+                <nav class="mobileMenu">
+                    <ul>
+                        <li><a href="#uslugi">Наши услуги</a></li>
+                        <li><a href="#price">Оставить заявку</a></li>
+                        <li><a href="#contacts">Почему мы?</a></li>
+                        <li><a href="#price">Сервис</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <section class="header">
         <div class="container">
-            <div class="header-box">
-                <div class="header-content">
-                    <h1>Устраним любые проблемы с кондиционером за 1 визит</h1>
-                    <p class="big-text">Закажите консультацию, чтобы узнать точную стоимость и сроки работ</p>
+            <div class="header-box" style="background: url(./img/header-bg.png);">
+                <div class="header-items">
+                    <div class="header-content">
+                        <h1>Устраним любые проблемы с кондиционером за <span>1 визит</span></h1>
+                        <p class="big-text">Закажите консультацию, чтобы узнать точную стоимость и сроки работ</p>
+                    </div>
+                    <div class="header-img-box">
+                        <img src="./img/header.png" alt="Ремонт кондиционеров" title="Главный рисунок сайта">
+                    </div>
                 </div>
-                <div class="header-img-box">
-                    <img src="" alt="Ремонт кондиционеров" title="Главный рисунок сайта">
-                </div>
-            </div>
-            <div class="action-box">
-                <div class="container">
-                    <form>
-                        <input type="text" name="name" required>
-                        <input type="text" name="phone" required>
-                        <button>Заказать звонок</button>
+                <div class="action-box">
+                    <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                        <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                        <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                        <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        <button type="submit">Заказать звонок</button>
                     </form>
                 </div>
             </div>
@@ -106,23 +109,23 @@
             <h2>За 10 лет работы мы научились учитывать все пожелания клиентов </h2>
             <div class="utp-box">
                 <div class="utp-item">
-                    <img src="" alt="Иконка гарантии" title="Иконка гарантии">
+                    <img src="./img/ico/clients/garant.png" alt="Иконка гарантии" title="Иконка гарантии">
                     <p class="utp-title text fw700">Гарантия</p>
                     <p class="utp-text small-text">Мы очень ценим наших клиентов и даем гарантию на все выполненные
                         работы</p>
                 </div>
                 <div class="utp-item">
-                    <img src="" alt="Иконка сервиса" title="Иконка сервиса">
+                    <img src="./img/ico/clients/service.png" alt="Иконка сервиса" title="Иконка сервиса">
                     <p class="utp-title text fw700">Сервис за час</p>
                     <p class="utp-text small-text">Наши монтажники аккуратно проведут все работы в вашем помещении</p>
                 </div>
                 <div class="utp-item">
-                    <img src="" alt="Иконка аккуратность" title="Иконка аккуратность">
+                    <img src="./img/ico/clients/accuracy.png" alt="Иконка аккуратность" title="Иконка аккуратность">
                     <p class="utp-title text fw700">Аккуратность выполнения работы</p>
                     <p class="utp-text small-text">После выполненных работ мы подметем за собой и уберем весь мусор</p>
                 </div>
                 <div class="utp-item">
-                    <img src="" alt="Иконка консультация" title="Иконка консультация">
+                    <img src="./img/ico/clients/consult.png" alt="Иконка консультация" title="Иконка консультация">
                     <p class="utp-title text fw700">Консультация после выполненной работы</p>
                     <p class="utp-text small-text">После уборки, наши специалисты проведут полный инструктаж по
                         использованию
@@ -133,13 +136,13 @@
     </section>
 
     <section class="service">
-        <div class="container">
+        <div class="container-mini">
             <h2>Наши услуги</h2>
             <div class="service-box-vertical">
                 <div class="service-item">
-                    <div class="service-item-title-box">
+                    <div class="service-item-title-box bg-yellow">
                         <h3 class="service-item-title">Диагностика</h3>
-                        <img class="service-item-img" alt="" title=""></img>
+                        <img src='./img/service/diagnostics.png' class="service-item-img" alt="" title=""></img>
                     </div>
                     <div class="service-item-detail-box">
                         <h5 class="service-item-detail-title fw500">В диагностику кондиционера входит:</h5>
@@ -172,7 +175,7 @@
                 <div class="service-item">
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Ремонт</h3>
-                        <img class="service-item-img" alt="" title=""></img>
+                        <img src="./img/service/repair.png" class="service-item-img" alt="" title=""></img>
                     </div>
                     <div class="service-item-detail-box">
                         <h5 class="service-item-detail-title fw500">Осуществляем следующий ремонт кондиционера:</h5>
@@ -203,6 +206,7 @@
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Сервисное обслуживание</h3>
                         <h5 class="service-item-detail-title fw500">В сервисное обслуживания кондиционера входит:</h5>
+                        <button class="service-item-button">Оставить заявку</button>
                     </div>
                     <div class="service-item-detail-box">
                         <ul class="service-item-detail-list">
@@ -215,12 +219,12 @@
                                 работы испарителя, проверка на наличие утечки фреона;</li>
                         </ul>
                     </div>
-                    <button class="service-item-button">Оставить заявку</button>
                 </div>
                 <div class="service-item">
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Демонтаж</h3>
                         <h5 class="service-item-detail-title fw500">В демонтаж кондиционера входит:</h5>
+                        <button class="service-item-button">Оставить заявку</button>
                     </div>
                     <div class="service-item-detail-box">
                         <ul class="service-item-detail-list">
@@ -252,33 +256,35 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="service-item-button">Оставить заявку</button>
                 </div>
                 <div class="service-item">
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Заправка</h3>
-                        <h5 class="service-item-detail-title fw500">Дозаправка кондиционеров</h5>
+                        <button class="service-item-button">Оставить заявку</button>
                     </div>
                     <div class="service-item-detail-box">
-                        <img class="service-item-img" alt="" title=""></img>
+                        <h5 class="service-item-detail-title fw500">Дозаправка кондиционеров</h5>
+                        <img src="./img/service/refueling.png" class="service-item-img" alt="" title=""></img>
                     </div>
-                    <button class="service-item-button">Оставить заявку</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="action-middle">
+    <section class="action-middle bg-blue">
         <div class="container">
-            <h2 class="text-align-left">Оставьте заявку</h2>
-            <p>Мы перезвоним Вам в течение 3 минут</p>
-            <img src="" alt="" class="action-box-img">
-            <div class="action-box">
-                <form>
-                    <input type="text" name="name" required>
-                    <input type="text" name="phone" required>
-                    <button>Заказать звонок</button>
-                </form>
+            <div class="action-middle-box">
+                <h2 class="text-align-left color-white">Оставьте заявку</h2>
+                <h4 class="color-white">Мы перезвоним Вам в течение 3 минут</h4>
+                <img src="./img/service/generators.png" alt="" class="action-box-img">
+                <div class="action-box bg-white">
+                    <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                        <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                        <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                        <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        <button type="submit">Заказать звонок</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -286,29 +292,39 @@
     <section class="brands">
         <div class="container">
             <h2>Почему вы должны выбрать именно нас?</h2>
-            <h5 class="fw300">Наша организация профессионально занимается установкой, обслуживанием и ремонтом
-                климатического
-                оборудования – это
-                сложившийся коллектив профессионалов, стаж по специальности большинства из которых составляет более
-                10 лет.</h5>
+            <div class="container-mini">
+                <h5 class="fw300">Наша организация профессионально занимается установкой, обслуживанием и ремонтом
+                    климатического
+                    оборудования – это
+                    сложившийся коллектив профессионалов, стаж по специальности большинства из которых составляет более
+                    10 лет.
+                </h5>
+            </div>
+
             <div class="brands-box">
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/beko.png" alt="Beko" title="Beko">
                 </div>
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/delonghi.png" alt="Delonghi" title="Delonghi">
                 </div>
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/general-climate.png" alt="General-climate" title="'General-climate">
                 </div>
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/bork.png" alt="Bork" title="Bork">
                 </div>
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/dainkin.png" alt="Dainkin" title="Dainkin">
                 </div>
                 <div class="brand-item">
-                    <img src="" alt="Beko">
+                    <img src="./img/brands/mitsubishi.png" alt="Mitsubishi" title="Mitsubishi">
+                </div>
+                <div class="brand-item">
+                    <img src="./img/brands/haier.png" alt="Haier" title="Haier">
+                </div>
+                <div class="brand-item">
+                    <img src="./img/brands/hunter.png" alt="Hunter" title="Hunter">
                 </div>
             </div>
         </div>
@@ -383,10 +399,11 @@
                     <img src="" alt="">
                 </div>
                 <div class="action-box">
-                    <form>
-                        <input type="text" name="name" required>
-                        <input type="text" name="phone" required>
-                        <button>Заказать звонок</button>
+                    <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                        <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                        <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                        <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        <button type="submit">Заказать звонок</button>
                     </form>
                 </div>
             </div>
@@ -505,10 +522,11 @@
                         жить и работать, позвоните или напишите нам сегодня!
                     </h4>
                     <div class="action-box">
-                        <form>
-                            <input type="text" name="name" required>
-                            <input type="text" name="phone" required>
-                            <button>Заказать звонок</button>
+                        <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                            <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                            <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                            <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                            <button type="submit">Заказать звонок</button>
                         </form>
                     </div>
                 </div>
