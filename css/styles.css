@@ -1,5 +1,5 @@
 @import 'font.css';
-@import 'splide.css';
+@import 'splide.min.css';
 
 html {
     font-family: sans-serif;
@@ -17,7 +17,6 @@ body {
     margin: 0;
 
 }
-
 
 [hidden],
 template {
@@ -186,8 +185,8 @@ h2 {
     font-weight: 700;
     text-align: center;
     color: #1B92D1;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 h3 {
@@ -237,6 +236,11 @@ section {
 
 .nav-bar {
     margin: 0px;
+}
+
+.nav-bar .social-box img {
+    width: 25px;
+    height: 25px;
 }
 
 .logo img {
@@ -493,8 +497,250 @@ input {
     top: -50%;
 }
 
+.action-middle-box h2 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
 .brands h5 {
     text-align: center;
+}
+
+.brands-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brands-box .brand-item {
+    margin-right: 15px;
+}
+
+.regular-service-item {
+    background-color: #FFF7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 25px;
+    margin-bottom: 33px;
+}
+
+.first-item {
+    background-color: #EDF5FF;
+}
+
+.regular-service-item-text {
+    width: 50%;
+}
+
+.works-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.works-item {
+    box-shadow: 0px 0px 100px rgba(198, 232, 242, 0.5);
+    border-radius: 20px;
+    width: 302px;
+    padding: 34px 40px 20px;
+    position: relative;
+}
+
+.works-item-title {
+    margin-bottom: 18px;
+}
+
+.works-item-ico {
+    position: absolute;
+    border-radius: 7px;
+    background-color: #44B9F6;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 8px 0px;
+    color: #fff;
+    top: -20px;
+    right: 20px;
+}
+
+.works-item:nth-child(2) .works-item-ico {
+    background-color: #E964FF;
+}
+
+.works-item:nth-child(3) .works-item-ico {
+    background-color: #FF7A7A;
+}
+
+.present-box {
+    display: flex;
+    align-items: center;
+}
+
+.present-box form {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 680px !important;
+    width: 100%;
+}
+
+.present-box form button {
+    width: 100%;
+    height: 55px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.iput-box input {
+    width: 300px;
+}
+
+.present-box img {
+    width: 448px;
+    height: 100px;
+    position: absolute;
+    left: -150px;
+    bottom: -100px;
+}
+
+.present-content {
+    position: relative;
+    margin-right: 50px;
+}
+
+.information {
+    padding: 55px 0px;
+}
+
+.information-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-item {
+    width: 289px;
+    height: 198px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+
+.information-item img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 48%;
+    top: -8px;
+}
+
+.information-title {
+    height: 35px;
+    margin-bottom: 16px;
+}
+
+.action-footer img {
+    height: 456px;
+    width: 100%;
+}
+
+.action-footer .block {
+    position: relative;
+}
+
+.action-footer-back-box {
+    width: 950px;
+    height: 390px;
+    position: absolute;
+    left: 241px;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    padding: 26px 27px 0px;
+}
+
+.action-footer-box {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    padding: 74px 50px 50px;
+    text-align: center;
+}
+
+.action-footer form {
+    display: block;
+}
+
+.action-footer button {
+    width: 100%;
+    height: 55px;
+}
+
+.action-footer input {
+    width: 48%;
+}
+
+.yandex-map {
+    position: relative;
+}
+
+.map-box {
+    position: absolute;
+    width: 482px;
+    height: 286px;
+    left: 80px;
+    top: 100px;
+    background: #fff;
+    border: 1px solid #F9F9F9;
+    text-align: center;
+    padding: 45px 35px;
+}
+
+.map-box .phone {
+    margin: 30px 0px;
+}
+
+.map-box a {
+    text-decoration: underline;
+}
+
+.map-box .phone a {
+    color: #FD931B;
+    margin: 0 auto;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.map-box .social-box a img {
+    height: 40px;
+    width: 40px;
+}
+
+.map-box .social-box a {
+    text-decoration: none;
+}
+
+.splide__slide {
+    display: flex;
+    align-items: center;
+}
+
+.splide__slide img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.splide {
+    margin: 30px 0px;
 }
 
 /* MEDIA */
@@ -681,50 +927,43 @@ input {
 }
 
 /* вопрос-ответ */
-#faq {
-    padding: 45px 0;
-}
-
-#faq.visible {
-    background: #f6f6f6 url(../img/bg-docs.jpg) no-repeat 50% 50%;
-}
 
 .faq-main {
-    background: #fff;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    min-height: 680px;
-    padding: 50px;
+    padding: 0px 50px;
     position: relative;
 }
 
 .faq {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
-.faq-status {
-    position: absolute;
-    right: 0;
-    top: 7px;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #000;
-    font-size: 0;
-    line-height: 0;
-}
 
 .faq-title {
-    font-size: 21px;
-    font-weight: 500;
     display: flex;
-    text-transform: uppercase;
     cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-title h4 {
+    width: 90%;
 }
 
 .faq.opened .faq-status {
+    display: none;
+}
+
+.faq .faq-ico-open {
+    display: none;
+}
+
+.faq.opened .faq-ico-open {
+    display: block;
+}
+
+
+.faq.opened .faq-ico-close {
     display: none;
 }
 
@@ -733,6 +972,7 @@ input {
     height: 0;
     opacity: 0;
     transition: all .3s;
+    /* width: 90%; */
 }
 
 .faq.opened .faq-info {
@@ -742,14 +982,20 @@ input {
     transition: all .3s;
 }
 
+.faq-container {
+    padding: 25px 0px;
+    border-top: 1px solid #D7D7D7;
+}
+
 /* yandex карта */
 #map {
-    height: 550px;
+    height: 530px;
 }
 
 .yandex-map {
-    height: 550px;
+    height: 530px;
 }
+
 
 @media (max-width: 767px) {
     #map {

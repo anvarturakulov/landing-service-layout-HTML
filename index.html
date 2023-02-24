@@ -289,6 +289,9 @@
         </div>
     </section>
 
+
+
+
     <section class="brands">
         <div class="container">
             <h2>Почему вы должны выбрать именно нас?</h2>
@@ -301,30 +304,22 @@
                 </h5>
             </div>
 
-            <div class="brands-box">
-                <div class="brand-item">
-                    <img src="./img/brands/beko.png" alt="Beko" title="Beko">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/delonghi.png" alt="Delonghi" title="Delonghi">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/general-climate.png" alt="General-climate" title="'General-climate">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/bork.png" alt="Bork" title="Bork">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/dainkin.png" alt="Dainkin" title="Dainkin">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/mitsubishi.png" alt="Mitsubishi" title="Mitsubishi">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/haier.png" alt="Haier" title="Haier">
-                </div>
-                <div class="brand-item">
-                    <img src="./img/brands/hunter.png" alt="Hunter" title="Hunter">
+            <div class="splide" aria-label="dd">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/brands/beko.png" alt="Beko" title="Beko"></li>
+                        <li class="splide__slide"><img src="./img/brands/delonghi.png" alt="Delonghi" title="Delonghi">
+                        </li>
+                        <li class="splide__slide"><img src="./img/brands/general-climate.png" alt="General-climate"
+                                title="'General-climate"></li>
+                        <li class="splide__slide"><img src="./img/brands/bork.png" alt="Bork" title="Bork"></li>
+                        <li class="splide__slide"><img src="./img/brands/dainkin.png" alt="Dainkin" title="Dainkin">
+                        </li>
+                        <li class="splide__slide"><img src="./img/brands/mitsubishi.png" alt="Mitsubishi"
+                                title="Mitsubishi"></li>
+                        <li class="splide__slide"><img src="./img/brands/haier.png" alt="Haier" title="Haier"></li>
+                        <li class="splide__slide"><img src="./img/brands/hunter.png" alt="Hunter" title="Hunter"></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -334,8 +329,8 @@
         <div class="container">
             <h2>Почему важен регулярный сервис кондиционеров</h2>
             <div class="regular-service-box">
-                <div class="regular-service-item blue">
-                    <img src="" alt="">
+                <div class="regular-service-item first-item">
+                    <img src="./img/service/group1.png" alt="">
                     <h5 class="regular-service-item-text">
                         Как и в любом климатическом оборудовании, в кондиционерах при работе скапливаются различные
                         загрязнения: пыль,
@@ -346,7 +341,6 @@
                 </div>
 
                 <div class="regular-service-item blue">
-                    <img src="" alt="">
                     <h5 class="regular-service-item-text">
                         Сервисное обслуживание кондиционера должно включать в себя широкий перечень процедур, а
                         именно: чистка и мойка наружного
@@ -356,6 +350,7 @@
                         замер уровня фреона, если
                         требуется, до заправка фреоном кондиционера до установленных производителем параметров
                     </h5>
+                    <img src="./img/service/group2.png" alt="">
                 </div>
             </div>
         </div>
@@ -396,13 +391,15 @@
                 <div class="present-content">
                     <h3 class="color-blue">Подарите себе комфорт быть дома.
                         Об остальном позаботимся мы</h3>
-                    <img src="" alt="">
+                    <img src="./img/other/wave.png" alt="">
                 </div>
                 <div class="action-box">
                     <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
                         <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
-                        <input class="form-control" name="name" type="text" value="" placeholder="Имя">
-                        <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        <div class="input-box">
+                            <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                            <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        </div>
                         <button type="submit">Заказать звонок</button>
                     </form>
                 </div>
@@ -412,33 +409,35 @@
 
     <section class="information bg-blue">
         <div class="container">
-            <h2 class="color-white">Важно проводить 1-2 раза в год
-                перед началом и по окончании использования</h2>
+            <div class="container-mini">
+                <h2 class="color-white">Важно проводить 1-2 раза в год <br />
+                    перед началом и по окончании использования</h2>
+            </div>
             <div class="information-box">
                 <div class="information-item bg-white">
                     <div class="information-title text fw700">Чистка внутреннего и наружнего блока</div>
                     <div class="information-text small-text">Чтобы исключить запах сырости и для качественной работы
                         вентиляции
                     </div>
-                    <img src="" alt="">
+                    <img src="./img/other/ellipse.png" alt="">
                 </div>
                 <div class="information-item bg-white">
                     <div class="information-title text fw700">Проверка электропитания</div>
                     <div class="information-text small-text">Чтобы исключить перерасход энергии и возможность замыкания
                     </div>
-                    <img src="" alt="">
+                    <img src="./img/other/ellipse.png" alt="">
                 </div>
                 <div class="information-item bg-white">
                     <div class="information-title text fw700">Проверка дренажной системы</div>
                     <div class="information-text small-text">Чтобы предотвратить засоры и конденсат выходил нормально
                     </div>
-                    <img src="" alt="">
+                    <img src="./img/other/ellipse.png" alt="">
                 </div>
                 <div class="information-item bg-white">
                     <div class="information-title text fw700">Дозаправка</div>
                     <div class="information-text small-text">Чтобы сохранять основную функциональность — охолаждение
                     </div>
-                    <img src="" alt="">
+                    <img src="./img/other/ellipse.png" alt="">
                 </div>
             </div>
         </div>
@@ -450,11 +449,18 @@
         <div class="container">
             <h2 class="title">Остались вопросы? Возможно, это ответы</h2>
             <div class="faq-main">
-                <section class="faq opened">
-                    <div class="faq-status"></div>
+                <div class="faq opened">
                     <div class="faq-container">
-                        <h4 class="faq-title fw700">Скажите, какие фильтры устанавливаются в кондиционерах и от чего они
-                            защищают?</h4>
+                        <div class="faq-title">
+                            <h4 class="fw700">
+                                Скажите, какие фильтры устанавливаются в кондиционерах и от чего они
+                                защищают?
+                            </h4>
+                            <div class="faq-ico">
+                                <img src="./img/ico/minus.png" class="faq-ico-open" />
+                                <img src="./img/ico/plus.png" class="faq-ico-close" />
+                            </div>
+                        </div>
                         <div class="faq-info">
                             <p class="text">Существуют следующие виды фильтров: воздушный электростатический и угольный
                                 (дезодорирующий). Воздушный - мелкая сетка,
@@ -467,12 +473,17 @@
                                 частицы пыли величиной до 0,0001 мм.</p>
                         </div>
                     </div>
-                </section>
-                <section class="faq">
-                    <div class="faq-status"></div>
+                </div>
+                <div class="faq">
                     <div class="faq-container">
-                        <h4 class="faq-title fw700">Кондиционер плохо охлаждает помещение, даже при включении его на
-                            полную мощность, что делать?</h4>
+                        <div class="faq-title">
+                            <h4 class="fw700">Кондиционер плохо охлаждает помещение, даже при включении его на
+                                полную мощность, что делать?</h4>
+                            <div class="faq-ico">
+                                <img src="./img/ico/minus.png" class="faq-ico-open" />
+                                <img src="./img/ico/plus.png" class="faq-ico-close" />
+                            </div>
+                        </div>
                         <div class="faq-info">
                             <p class="text">Существуют следующие виды фильтров: воздушный электростатический и угольный
                                 (дезодорирующий). Воздушный
@@ -488,46 +499,61 @@
                                 частицы пыли величиной до 0,0001 мм.</p>
                         </div>
                     </div>
-                </section>
-                <section class="faq">
-                    <div class="faq-status"></div>
+                </div>
+                <div class="faq">
                     <div class="faq-container">
-                        <p class="faq-title">Чем отличается инверторный кондиционер от обычного?</p>
+                        <div class="faq-title">
+                            <h4 class="fw700">
+                                Чем отличается инверторный кондиционер от обычного?
+                            </h4>
+                            <div class="faq-ico">
+                                <img src="./img/ico/minus.png" class="faq-ico-open" />
+                                <img src="./img/ico/plus.png" class="faq-ico-close" />
+                            </div>
+                        </div>
                         <div class="faq-info">
-                            <p class="text">Существуют следующие виды фильтров: воздушный электростатический и угольный
+                            <p class="text">Существуют следующие виды фильтров: воздушный электростатический и
+                                угольный
                                 (дезодорирующий). Воздушный
                                 - мелкая сетка,
-                                защищающая наши легкие и теплообменник от пыли и механических примесей. Этот фильтр не
+                                защищающая наши легкие и теплообменник от пыли и механических примесей. Этот фильтр
+                                не
                                 требует замены - его
                                 достаточно
                                 помыть в теплой воде или пропылесосить. Благодаря электростатическому заряду он
                                 удерживает мелкие заряженные
                                 частицы,
-                                пыльцу, микроорганизмы. И, наконец, угольный (карбоновый) фильтр устраняет табачный дым,
+                                пыльцу, микроорганизмы. И, наконец, угольный (карбоновый) фильтр устраняет табачный
+                                дым,
                                 запахи и наиболее мелкие
                                 частицы пыли величиной до 0,0001 мм.</p>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
 
     <section class="action-footer">
         <div class="container">
-            <img src="" alt="">
-            <div class="action-footer-back-box">
-                <div class="action-footer-box bg-white">
-                    <h4 class="color-blue fw700">Чтобы завтра вам стало намного комфортнее
-                        жить и работать, позвоните или напишите нам сегодня!
-                    </h4>
-                    <div class="action-box">
-                        <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
-                            <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
-                            <input class="form-control" name="name" type="text" value="" placeholder="Имя">
-                            <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
-                            <button type="submit">Заказать звонок</button>
-                        </form>
+            <div class="block">
+                <img src="./img/other/climate.jpg" alt="">
+                <div class="action-footer-back-box">
+                    <div class="action-footer-box bg-white">
+                        <h4 class="color-blue fw700">Чтобы завтра вам стало намного комфортнее
+                            жить и работать, позвоните или напишите нам сегодня!
+                        </h4>
+                        <div class="action-box">
+                            <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                                <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                                <div class="input-box">
+                                    <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                                    <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон"
+                                        required>
+                                </div>
+                                <button type="submit">Заказать звонок</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -537,9 +563,13 @@
     <div class="yandex-map">
         <div id="yamap"></div>
         <div class="map-box">
-            <a class="text" href="https://uristpfo.ru/kontaktyi">г. Москва, Холодильный переулок,д. 3, корп. 1,
-                стр. 2, офис 2119 (ст. м. Тульская)</a>
-            <a href="telto:+79776433717"></a>
+            <div>
+                <a class="text" href="https://uristpfo.ru/kontaktyi">г. Москва, Холодильный переулок,д. 3, корп. 1,
+                    стр. 2, офис 2119 (ст. м. Тульская)</a>
+            </div>
+            <div class="phone">
+                <a href="telto:+79776433717">+79776433717</a>
+            </div>
             <div class="social-box">
                 <a href="#" class="social-items">
                     <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
