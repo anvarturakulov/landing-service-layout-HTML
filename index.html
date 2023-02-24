@@ -21,6 +21,7 @@
 
 <body>
     <section class="nav-bar">
+
         <div class="container">
             <div class="nav-bar-box">
                 <div class="logo">
@@ -28,21 +29,22 @@
                 </div>
                 <ul class="main-menu">
                     <li class="main-menu-item text">
-                        <a href="#">Наши услуги</a>
+                        <a href="#service">Наши услуги</a>
                     </li>
                     <li class="main-menu-item text">
-                        <a href="#">Оставить заявку</a>
+                        <a href="#action-middle">Оставить заявку</a>
                     </li>
                     <li class="main-menu-item text">
-                        <a href="#">Почему мы?</a>
+                        <a href="#brands">Почему мы?</a>
                     </li>
                     <li class="main-menu-item text">
-                        <a href="#">Сервис</a>
+                        <a href="#regular-service">Сервис</a>
                     </li>
                     <li class="main-menu-item text">
-                        <a href="#">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
+
                 <div class="social-box">
                     <a href="#" class="social-items">
                         <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
@@ -59,38 +61,41 @@
                         <img src="./img/ico/phone.png" alt="Телефон" title="Телефон">
                         <div class="phone-number text">+7 (485) 937- 99- 92</div>
                     </div>
-                    <div class="call-button">Заказать звонок</div>
-                </div>
-
-                <nav class="mobileMenu">
-                    <ul>
-                        <li><a href="#uslugi">Наши услуги</a></li>
-                        <li><a href="#price">Оставить заявку</a></li>
-                        <li><a href="#contacts">Почему мы?</a></li>
-                        <li><a href="#price">Сервис</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div id="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <button class="call-button">Заказать звонок</button>
                 </div>
             </div>
+            <nav class="mobileMenu">
+                <ul>
+                    <li><a href="#service">Наши услуги</a></li>
+                    <li><a href="#action-middle">Оставить заявку</a></li>
+                    <li><a href="#brands">Почему мы?</a></li>
+                    <li><a href="#regular-service">Сервис</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+        <div class="nav-bar-background"></div>
     </section>
 
     <section class="header">
         <div class="container">
-            <div class="header-box" style="background: url(./img/header-bg.png);">
+            <div class="header-box" style="background-image: url(./img/header-bg.png);">
                 <div class="header-items">
                     <div class="header-content">
                         <h1>Устраним любые проблемы с кондиционером за <span>1 визит</span></h1>
                         <p class="big-text">Закажите консультацию, чтобы узнать точную стоимость и сроки работ</p>
+                        <button class="call-button">Заказать звонок</button>
                     </div>
                     <div class="header-img-box">
                         <img src="./img/header.png" alt="Ремонт кондиционеров" title="Главный рисунок сайта">
                     </div>
+
                 </div>
                 <div class="action-box">
                     <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
@@ -135,7 +140,7 @@
         </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
         <div class="container-mini">
             <h2>Наши услуги</h2>
             <div class="service-box-vertical">
@@ -271,7 +276,7 @@
         </div>
     </section>
 
-    <section class="action-middle bg-blue">
+    <section class="action-middle bg-blue" id="action-middle">
         <div class="container">
             <div class="action-middle-box">
                 <h2 class="text-align-left color-white">Оставьте заявку</h2>
@@ -289,10 +294,7 @@
         </div>
     </section>
 
-
-
-
-    <section class="brands">
+    <section class="brands" id="brands">
         <div class="container">
             <h2>Почему вы должны выбрать именно нас?</h2>
             <div class="container-mini">
@@ -325,7 +327,7 @@
         </div>
     </section>
 
-    <section class="regular-service">
+    <section class="regular-service" id="regular-service">
         <div class="container">
             <h2>Почему важен регулярный сервис кондиционеров</h2>
             <div class="regular-service-box">
@@ -357,7 +359,7 @@
     </section>
 
     <section class="works">
-        <div class="container">
+        <div class="container-mini">
             <h2>Наши работы включают в себя</h2>
             <div class="works-box">
                 <div class="works-item">
@@ -385,6 +387,8 @@
         </div>
     </section>
 
+
+
     <section class="present">
         <div class="container">
             <div class="present-box">
@@ -407,6 +411,7 @@
         </div>
     </section>
 
+    <!--
     <section class="information bg-blue">
         <div class="container">
             <div class="container-mini">
@@ -443,7 +448,7 @@
         </div>
     </section>
 
-    <!-- <p><a href="javascript:void(0)" class="trigger" data-modal-trigger="trigger-1">Открыть модалку</a></p> -->
+
 
     <div id="faq" class="lazy-background">
         <div class="container">
@@ -560,7 +565,7 @@
         </div>
     </section>
 
-    <div class="yandex-map">
+    <div class="yandex-map" id="contacts">
         <div id="yamap"></div>
         <div class="map-box">
             <div>
@@ -643,9 +648,11 @@
             </div>
         </div>
     </section>
-
+     -->
     <script src="js/vendor.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
+
+<!-- <p><a href="javascript:void(0)" class="trigger" data-modal-trigger="trigger-1">Открыть модалку</a></p> -->

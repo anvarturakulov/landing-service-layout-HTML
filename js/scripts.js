@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // кнопка меню бургер 
   let burgerButton = document.getElementById('nav-icon');
+
   let mainMenu = document.querySelector('.mobileMenu');
+
   burgerButton.addEventListener('click', () => {
     burgerButton.classList.toggle('open');
     if (burgerButton.classList.contains('open')) {
@@ -10,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       mainMenu.classList.remove('active');
     }
   });
+
+  mainMenu.addEventListener('click', () => {
+    mainMenu.classList.remove('active');
+    burgerButton.classList.toggle('open')
+  })
 
   // скрытый инпут против спама формы (это не удалять!!)
   if (document.querySelector('.ncapt')) {
@@ -177,16 +184,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  // var splide = new Splide('.splide', { autoScroll: { speed: 2, }, })
-
   let splide = new Splide('.splide', {
     type: 'loop',
     perPage: 5,
+    breakpoints: {
+      420: {
+        perPage: 1,
+      },
+      576: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 3,
+      },
+      992: {
+        perPage: 4,
+      }
+    }
   });
 
-  // splide.on('autoplay:playing', function (rate) {
-  //   console.log(rate); // 0-1
-  // });
-
   splide.mount();
+
+  document.querySelectorAll("a[href^='#']").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      let href = this.getAttribute("href").substring(1);
+      const scrollTarget = document.getElementById(href);
+      const topOffset = document.querySelector(".nav-bar-box").offsetHeight;
+      // const topOffset = 10; // если не нужен отступ сверху
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    let navBarBox = document.querySelector('.nav-bar-box');
+    let navBarBackground = document.querySelector('.nav-bar-background')
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      navBarBox.classList.add('nav-bar-fixed')
+      if (document.documentElement.clientWidth < 769) {
+        navBarBackground.classList.add('nav-bar-background-mobile')
+      }
+      navBarBackground.classList.add('display-block')
+
+    } else {
+      navBarBox.classList.remove('nav-bar-fixed')
+      navBarBackground.classList.remove('display-block')
+      navBarBackground.classList.remove('nav-bar-background-mobile')
+    }
+  })
+
 });
