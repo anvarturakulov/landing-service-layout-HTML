@@ -79,6 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener('click', () => {
       const trigger = button.getAttribute('data-modal-trigger');
       const modal = document.querySelector(`[data-modal=${trigger}]`);
+      // console.log(trigger)
+      if (trigger == 'trigger-2') {
+        modal.querySelector('.input-service-name').value = button.getAttribute('data-service')
+      }
       const contentWrapper = modal.querySelector('.content-wrapper');
       const close = modal.querySelector('.close');
 

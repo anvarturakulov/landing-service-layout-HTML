@@ -61,7 +61,7 @@
                         <img src="./img/ico/phone.png" alt="Телефон" title="Телефон">
                         <div class="phone-number text">+7 (485) 937- 99- 92</div>
                     </div>
-                    <button class="call-button">Заказать звонок</button>
+                    <button class="call-button trigger" data-modal-trigger="trigger-1">Заказать звонок</button>
                 </div>
             </div>
             <nav class="mobileMenu">
@@ -140,6 +140,8 @@
         </div>
     </section>
 
+    <!-- <p><a href="javascript:void(0)" class="trigger" data-modal-trigger="trigger-1">Открыть модалку</a></p> -->
+
     <section class="service" id="service">
         <div class="container-mini">
             <h2>Наши услуги</h2>
@@ -174,7 +176,8 @@
                                 кондиционера в сервис-центр</li>
                         </ul>
                     </div>
-                    <button class="service-item-button">Оставить заявку</button>
+                    <button class="service-item-button trigger" data-modal-trigger="trigger-2"
+                        data-service="Диагностика">Оставить заявку</button>
                 </div>
 
                 <div class="service-item">
@@ -203,7 +206,9 @@
                                 блока</li>
                         </ul>
                     </div>
-                    <button class="service-item-button">Оставить заявку</button>
+                    <button class="service-item-button trigger" data-modal-trigger="trigger-2"
+                        data-service="Ремонт">Оставить
+                        заявку</button>
                 </div>
             </div>
             <div class="service-box-horizontal">
@@ -211,7 +216,10 @@
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Сервисное обслуживание</h3>
                         <h5 class="service-item-detail-title fw500">В сервисное обслуживания кондиционера входит:</h5>
-                        <button class="service-item-button">Оставить заявку</button>
+                        <!-- <button class="service-item-button">Оставить заявку</button> -->
+                        <button class="service-item-button trigger" data-modal-trigger="trigger-2"
+                            data-service="Сервисное обслуживание">Оставить
+                            заявку</button>
                     </div>
                     <div class="service-item-detail-box">
                         <ul class="service-item-detail-list">
@@ -229,7 +237,10 @@
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Демонтаж</h3>
                         <h5 class="service-item-detail-title fw500">В демонтаж кондиционера входит:</h5>
-                        <button class="service-item-button">Оставить заявку</button>
+                        <!-- <button class="service-item-button">Оставить заявку</button> -->
+                        <button class="service-item-button trigger" data-modal-trigger="trigger-2"
+                            data-service="Демонтаж">Оставить
+                            заявку</button>
                     </div>
                     <div class="service-item-detail-box">
                         <ul class="service-item-detail-list">
@@ -265,7 +276,10 @@
                 <div class="service-item">
                     <div class="service-item-title-box">
                         <h3 class="service-item-title">Заправка</h3>
-                        <button class="service-item-button">Оставить заявку</button>
+                        <!-- <button class="service-item-button">Оставить заявку</button> -->
+                        <button class="service-item-button trigger" data-modal-trigger="trigger-2"
+                            data-service="Заправка">Оставить
+                            заявку</button>
                     </div>
                     <div class="service-item-detail-box">
                         <h5 class="service-item-detail-title fw500">Дозаправка кондиционеров</h5>
@@ -586,18 +600,35 @@
     </div>
 
 
-    <div class="modal modal-1" data-modal="trigger-1">
+    <div class="modal" data-modal='trigger-1'>
         <article class="content-wrapper">
             <button class="close"></button>
             <div class="modal-wrap">
                 <div class="content">
-                    <p class="text-big">Оставьте свои данные</p>
-                    <br>
+                    <p class="text-big">Заказать звонок</p>
                     <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
                         <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
                         <input class="form-control" name="name" type="text" value="" placeholder="Имя">
                         <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
-                        <button type="submit" class="btn">Получить консультацию</button>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" data-modal='trigger-2'>
+        <article class="content-wrapper">
+            <button class="close"></button>
+            <div class="modal-wrap">
+                <div class="content">
+                    <p class="text-big">Заказать услугу</p>
+                    <form action="/thanks/" class="send-form" method="post" enctype="multipart/form-data">
+                        <span class="ncapt" style="display:none;">a34e584b28c2d0f08e544385aaa075aa</span>
+                        <input class="form-control input-service-name" name="service" type="text" value="" disabled>
+                        <input class="form-control" name="name" type="text" value="" placeholder="Имя">
+                        <input class="form-control" name="phone" type="tel" value="" placeholder="Телефон" required>
+                        <button type="submit" class="btn">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -606,49 +637,51 @@
 
     <section class="footer">
         <div class="container">
-            <div class="logo-box">
-                <img src="" alt="" class="logo">
-                <a href="#">Политика конфиденциальности</a>
-                <div class="logo-box-text text">2018-2022.
-                    Все права защищены</div>
-            </div>
-            <div class="footer-info-box">
-                <div class="footer-info text">
-                    Внимание! Данный сайт носит информационный характер и ни при каких условиях не является
-                    публичной офертой, которая
-                    определяется положениями Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной
-                    информации о наличии и
-                    стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к нашим менеджерам. Или мы
-                    сами свяжемся с Вами.
-                </div>
-            </div>
-            <div class="footer-call-box">
-                <div class="call-box">
-                    <div class="phone">
-                        <img src="" alt="Телефон" title="Телефон">
-                        <a href='telto:+74859379992' class="phone-number">+7 (485) 937- 99- 92</a>
+            <div class="footer-box">
+                <div class="logo-box">
+                    <img src="./img/logo.png" alt="" class="logo">
+                    <div class="political-inf">
+                        <a href="#">Политика конфиденциальности</a>
                     </div>
-                    <div class="call-button">Заказать звонок</div>
+                    <div class="logo-box-text text">2018-2022.
+                        Все права защищены</div>
                 </div>
-                <div class="social-box">
-                    <a href="#" class="social-items">
-                        <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
-                    </a>
-                    <a href="#" class="social-items">
-                        <img src="./img/ico/messanger/viber.png" alt="viber" title="viber">
-                    </a>
-                    <a href="#" class="social-items">
-                        <img src="./img/ico/messanger/weechat.png" alt="weechat" title="weechat">
-                    </a>
+                <div class="footer-info-box">
+                    <div class="footer-info text">
+                        Внимание! Данный сайт носит информационный характер и ни при каких условиях не является
+                        публичной офертой, которая
+                        определяется положениями Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной
+                        информации о наличии и
+                        стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к нашим менеджерам. Или мы
+                        сами свяжемся с Вами.
+                    </div>
+                </div>
+                <div class="footer-call-box">
+                    <div class="call-box">
+                        <div class="phone">
+                            <img src="./img/ico/phone.png" alt="Телефон" title="Телефон">
+                            <a href='telto:+74859379992' class="phone-number">+7 (485) 937- 99- 92</a>
+                        </div>
+                        <button class="call-button trigger" data-modal-trigger="trigger-1">Заказать звонок</button>
+                    </div>
+                    <div class="social-box">
+                        <a href="#" class="social-items">
+                            <img src="./img/ico/messanger/telegram.png" alt="telegram" title="telegram">
+                        </a>
+                        <a href="#" class="social-items">
+                            <img src="./img/ico/messanger/viber.png" alt="viber" title="viber">
+                        </a>
+                        <a href="#" class="social-items">
+                            <img src="./img/ico/messanger/weechat.png" alt="weechat" title="weechat">
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
-    <!-- -->
     <script src="js/vendor.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
-
-<!-- <p><a href="javascript:void(0)" class="trigger" data-modal-trigger="trigger-1">Открыть модалку</a></p> -->
