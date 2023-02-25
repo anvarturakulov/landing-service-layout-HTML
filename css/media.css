@@ -1,32 +1,10 @@
 /* Сетка адаптив от bootstrap, основные @media max-width 1399/1199/991/767/575 */
 
-@media (min-width:320px) {
-    
-}
-
 @media (min-width:576px) {
-    
-
     .modal .content-wrapper .content {
         padding: 40px 20px;
     }
 }
-
-@media (min-width:768px) {
-    /* .container {
-        max-width: 768px
-    } */
-    
-
-    #map {
-        height: 350px;
-    }
-
-    .yandex-map {
-        height: 350px;
-    }
-}
-
 
 @media (min-width:320px) {}
 
